@@ -58,3 +58,6 @@ gem "materialize-sass", "~> 1.0.0.rc2"
 gem "figaro"
 gem "omniauth"
 gem "omniauth-twitter"
+
+gem "refile", require: "refile/rails", github: "refile/refile"
+gem "refile-mini_magick"

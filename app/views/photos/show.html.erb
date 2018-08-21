@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @photo.name %>
+
+  <div>
+  <% if @photo.image_id? %>
+  <%= image_tag attachment_url(@photo, :image) %>
+<% end %>
+</div>    
+</p>
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

@@ -18,7 +18,6 @@ class User < ApplicationRecord
 
   def owns_discussion?(discussion)
     # discussions.include?(discussion)
-
     self.id == discussion.user_id
   end
 end
